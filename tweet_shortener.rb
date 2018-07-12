@@ -27,7 +27,7 @@ def word_substituter(string) # Takes in string as input
     finish.push(dictionary.has_key?(
       start[counter].downcase.to_sym) ?
                                       # Else push word
-    dictionary[start[counter].to_sym] : start[counter])
+    dictionary[start[counter].downcase.to_sym] : start[counter])
     counter += 1
   end
   # Returns shorter string as output

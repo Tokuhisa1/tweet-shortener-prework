@@ -28,7 +28,7 @@ def word_substituter(string) # Takes in string as input
       start[counter].downcase.to_sym) ?
         # *Edge case - word is Capitalized*
         dictionary[start[counter].downcase.to_sym] :
-                                        # Else push word
+                                      # Else push word
                                         start[counter])
     counter += 1
   end

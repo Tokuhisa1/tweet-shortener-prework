@@ -25,7 +25,7 @@ def word_substituter(string) # Takes in string as input
   while counter < start.length
     # If word in dictionary, replace with abbr.
     finish.push(dictionary.has_key?(
-      start[counter].to_sym) ?
+      start[counter].downcase.to_sym) ?
                                       # Else push word
     dictionary[start[counter].to_sym] : start[counter])
     counter += 1

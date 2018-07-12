@@ -37,7 +37,7 @@ end
 def bulk_tweet_shortener(array)
   counter = 0
   while counter < array.length
-    puts bulk_tweet_shortener(array[counter])
+    puts word_substituter(array[counter])
     counter += 1
   end
 end

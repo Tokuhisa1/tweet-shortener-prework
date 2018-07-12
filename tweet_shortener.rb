@@ -33,3 +33,6 @@ def word_substituter(string) # Takes in string as input
   # Returns shorter string as output
   finish.join(' ')
 end
+
+def bulk_tweet_shortener(array)
+end

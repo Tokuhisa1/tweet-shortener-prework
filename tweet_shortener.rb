@@ -35,4 +35,9 @@ def word_substituter(string) # Takes in string as input
 end
 
 def bulk_tweet_shortener(array)
+  counter = 0
+  while counter < array.length
+    puts bulk_tweet_shortener(array)
+    counter += 1
+  end
 end

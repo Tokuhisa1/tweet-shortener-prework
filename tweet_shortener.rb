@@ -43,3 +43,6 @@ def bulk_tweet_shortener(array)
     counter += 1
   end
 end
+
+def bulk_tweet_shortener(string)
+end

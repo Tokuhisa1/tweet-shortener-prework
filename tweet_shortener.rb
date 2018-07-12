@@ -25,10 +25,11 @@ def word_substituter(string) # Takes in string as input
   while counter < start.length
     # If word in dictionary, replace with abbr.
     finish.push(dictionary.has_key?(
-      # *Edge case - Word is capitalized*
       start[counter].downcase.to_sym) ?
-                                      # Else push word
-    dictionary[start[counter].downcase.to_sym] : start[counter])
+        # *Edge case - word is Capitalized*
+        dictionary[start[counter].downcase.to_sym] :
+                                        # Else push word
+                                        start[counter])
     counter += 1
   end
   # Returns shorter string as output
